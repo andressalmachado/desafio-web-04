@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  background: #f2f2f2;
+}
+
+header {
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+header .conteudo {
+  width: 700px;
+  text-align: center;
+}
+
+header h2 {
+  font: 60px "Roboto", sans-serif;
+  color: #ea1d2c;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+header h3 {
+  font: 30px "Roboto", sans-serif;
+  color: #6e6e6e;
+}
+
+header .botao-feedback {
+  position: fixed;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  background-color: #ea1d2c;
+  right: -32px;
+  font: 14px "Roboto", sans-serif;
+  color: #fff;
+  padding: 16px 20px;
+}
+
+header .botao-feedback:hover {
+  right: -25px;
+}
+
+header .cocacola {
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+}
+
+header .frigideira {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 400px;
+}
+
+header .compras {
+  display: none;
+  height: 240px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+header .tomate {
+  display: none;
+  height: 140px;
+  position: absolute;
+  left: 0;
+  bottom: 10%;
+}
+
+@media (max-width: 900px) {
+  header .cocacola {
+    display: none;
+  }
+}
+
+@media (max-width: 825px) {
+  header .conteudo {
+    width: 500px;
+  }
+  header h2 {
+    font-size: 50px;
+  }
+  header h3 {
+    font-size: 25px;
+  }
+  header .frigideira {
+    display: none;
+  }
+  header .compras {
+    display: block;
+  }
+  header .tomate {
+    display: block;
+  }
+}
+
+@media (max-width: 625px) {
+  header .botao-feedback {
+    display: none;
+  }
+  header .compras {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  header {
+    height: 200px;
+  }
+  header .conteudo {
+    width: 360px;
+  }
+  header h2 {
+    font-size: 35px;
+  }
+  header h3 {
+    font-size: 17px;
+  }
+  header .tomate {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
